@@ -30,7 +30,7 @@
     "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "dotenv": "^16.4.7",
+    "dotenv": "^17.4.2",
     "snoowrap": "^1.23.0",
     "@eslint/js": "10.0.1",
     "@tailwindcss/vite": "4.3.0",
