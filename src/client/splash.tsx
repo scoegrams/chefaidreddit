@@ -18,8 +18,8 @@ export const Splash = () => {
           ChefAid Food Radar
         </h1>
         <p className="text-base text-center text-gray-600 dark:text-gray-300 max-w-sm">
-          Pizza, tacos, fried food, and fast-food hits — top posts from the past
-          month.
+          Top posts this month from pizza, ramen, sushi, burgers, and 20+ culinary
+          communities.
         </p>
       </div>
       <div className="flex items-center justify-center mt-3">
@@ -43,9 +43,9 @@ export const Splash = () => {
         <span className="text-gray-300 dark:text-gray-600">|</span>
         <button
           className="cursor-pointer hover:text-gray-900 dark:hover:text-white transition-colors"
-          onClick={() => navigateTo('https://www.reddit.com/r/tacos')}
+          onClick={() => navigateTo('https://www.reddit.com/r/ramen')}
         >
-          r/tacos
+          r/ramen
         </button>
       </footer>
     </div>

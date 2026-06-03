@@ -1,4 +1,3 @@
-/** Culinary communities tracked for monthly top posts */
 export const CULINARY_SUBREDDITS = [
   'AskCulinary',
   'burgers',
@@ -22,18 +21,4 @@ export const CULINARY_SUBREDDITS = [
   'sushi',
   'UK_Food',
   'wings',
-] as const;
-
-export type FoodTrendPost = {
-  subreddit: string;
-  title: string;
-  score: number;
-  numComments: number;
-  permalink: string;
-};
-
-export type FoodTrendsResponse = {
-  type: 'food-trends';
-  cached: boolean;
-  posts: FoodTrendPost[];
-};
+];

@@ -1,17 +1,6 @@
 import 'dotenv/config';
 
-const SUBREDDITS = [
-  'pizza',
-  'tacos',
-  'mexicanfood',
-  'fastfood',
-  'JunkFood',
-  'streetfood',
-  'deepfried',
-  'fried',
-  'FoodPorn',
-  'wings',
-];
+import { CULINARY_SUBREDDITS } from './culinary-subreddits.mjs';
 
 const USER_AGENT =
   process.env.REDDIT_USER_AGENT ??
@@ -78,7 +67,7 @@ if (!token) {
 }
 
 const posts = [];
-for (const sub of SUBREDDITS) {
+for (const sub of CULINARY_SUBREDDITS) {
   posts.push(...(await fetchTop(sub, 10, token)));
 }
 posts.sort((a, b) => b.score - a.score);

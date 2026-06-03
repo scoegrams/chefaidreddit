@@ -1,17 +1,5 @@
 import Snoowrap from 'snoowrap';
-
-const DEFAULT_SUBREDDITS = [
-  'pizza',
-  'tacos',
-  'mexicanfood',
-  'fastfood',
-  'JunkFood',
-  'streetfood',
-  'deepfried',
-  'fried',
-  'FoodPorn',
-  'wings',
-];
+import { CULINARY_SUBREDDITS } from './culinary-subreddits.mjs';
 
 function createClient() {
   const {
@@ -55,7 +43,7 @@ function createClient() {
  * @param {number} [options.topN] max posts returned after merge (default 25)
  */
 export async function getFoodTrends(options = {}) {
-  const subreddits = options.subreddits ?? DEFAULT_SUBREDDITS;
+  const subreddits = options.subreddits ?? CULINARY_SUBREDDITS;
   const limitPerSub = options.limitPerSub ?? 10;
   const time = options.time ?? 'month';
   const topN = options.topN ?? 25;
