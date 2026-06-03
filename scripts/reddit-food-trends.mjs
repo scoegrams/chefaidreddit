@@ -1,13 +1,16 @@
 import Snoowrap from 'snoowrap';
 
 const DEFAULT_SUBREDDITS = [
-  'food',
-  'recipes',
-  'cooking',
-  'Baking',
-  'MealPrepSunday',
+  'pizza',
+  'tacos',
+  'mexicanfood',
+  'fastfood',
+  'JunkFood',
+  'streetfood',
+  'deepfried',
+  'fried',
   'FoodPorn',
-  'slowcooking',
+  'wings',
 ];
 
 function createClient() {

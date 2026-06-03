@@ -1,15 +1,20 @@
 import { redis, reddit } from '@devvit/web/server';
 import type { FoodTrendPost } from '../../shared/food-trends';
 
-const CACHE_KEY = 'food-trends:month:v1';
+const CACHE_KEY = 'food-trends:month:v2:pizza-tacos-fried';
 const CACHE_TTL_MS = 60 * 60 * 1000;
 
 const FOOD_SUBREDDITS = [
-  'food',
-  'recipes',
-  'cooking',
-  'Baking',
-  'MealPrepSunday',
+  'pizza',
+  'tacos',
+  'mexicanfood',
+  'fastfood',
+  'JunkFood',
+  'streetfood',
+  'deepfried',
+  'fried',
+  'FoodPorn',
+  'wings',
 ];
 
 export async function fetchFoodTrends(): Promise<{

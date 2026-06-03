@@ -18,8 +18,8 @@ export const Splash = () => {
           ChefAid Food Radar
         </h1>
         <p className="text-base text-center text-gray-600 dark:text-gray-300 max-w-sm">
-          See what&apos;s trending on r/food, r/recipes, and more — top posts
-          from the past month.
+          Pizza, tacos, fried food, and fast-food hits — top posts from the past
+          month.
         </p>
       </div>
       <div className="flex items-center justify-center mt-3">
@@ -36,16 +36,16 @@ export const Splash = () => {
       <footer className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 text-[0.8em] text-gray-600 dark:text-gray-400">
         <button
           className="cursor-pointer hover:text-gray-900 dark:hover:text-white transition-colors"
-          onClick={() => navigateTo('https://www.reddit.com/r/food')}
+          onClick={() => navigateTo('https://www.reddit.com/r/pizza')}
         >
-          r/food
+          r/pizza
         </button>
         <span className="text-gray-300 dark:text-gray-600">|</span>
         <button
           className="cursor-pointer hover:text-gray-900 dark:hover:text-white transition-colors"
-          onClick={() => navigateTo('https://www.reddit.com/r/recipes')}
+          onClick={() => navigateTo('https://www.reddit.com/r/tacos')}
         >
-          r/recipes
+          r/tacos
         </button>
       </footer>
     </div>

@@ -1,11 +1,16 @@
 import 'dotenv/config';
 
 const SUBREDDITS = [
-  'food',
-  'recipes',
-  'cooking',
-  'Baking',
-  'MealPrepSunday',
+  'pizza',
+  'tacos',
+  'mexicanfood',
+  'fastfood',
+  'JunkFood',
+  'streetfood',
+  'deepfried',
+  'fried',
+  'FoodPorn',
+  'wings',
 ];
 
 const USER_AGENT =

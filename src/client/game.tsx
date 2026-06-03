@@ -22,7 +22,7 @@ export const App = () => {
           ChefAid — Food trends
         </h1>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          Top posts this month across food subreddits
+          Pizza, tacos, fried &amp; fast food — top posts this month
           {cached && !loading ? ' · cached' : ''}
         </p>
       </header>
